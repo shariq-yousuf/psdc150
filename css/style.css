@@ -163,6 +163,10 @@ footer a:hover {
         cursor: pointer;
     }
 
+    #icon {
+        vertical-align: bottom;
+    }
+
     .drop-btn:hover {
         background-color: rgba(7, 148, 7, 0.74);
         color: white;
