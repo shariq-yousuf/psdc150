@@ -122,3 +122,19 @@ footer a {
 footer a:hover {
     color: aqua;
 }
+
+@media screen and (max-width: 300px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }    
+    li {
+        display: block;
+        border-bottom: 1px solid black ;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
