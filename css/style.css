@@ -2,15 +2,22 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* nav bar styling start */
 
 :root {
     --green: rgba(1, 255, 1, 1);
 }
 
-body {
-    margin: 0;
-    padding: 0;
+
+nav {
+    position: sticky;
+    top: 0;
 }
 
 .dropdown {
