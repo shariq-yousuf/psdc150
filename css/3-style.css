@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* nav bar styling start */
+
+:root {
+    --green: rgba(1, 255, 1, 1);
+}
+
+.dropdown {
+    display: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: var(--green);
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 0;
+    border-right: 2px solid black;
+
+}
+
+li a,
+.about a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    padding: 15px;
+    margin: 0;
+    font-family: Geneva, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+li a:visited,
+.about a:visited {
+    color: blueviolet;
+}
+
+li a:hover,
+.about a:hover {
+    background-color: rgb(108, 21, 119);
+    color: white;
+}
+
+li a:active,
+.about a:active {
+    color: red;
+}
+
+/* nav bar styling end */
+
+
+/* main styling start */
+.main-bg {
+    background-image: linear-gradient(125deg, rgb(108, 21, 119) 50%, rgba(241, 11, 126, 0.568));
+    padding: 1px;
+    height: 85vh;
+}
+
+main {
+    background-color: rgba(35, 118, 212, 0.877);
+    width: 50%;
+    margin: 10px auto;
+    padding: 1px;
+    border-radius: 5px;
+    transition: width 2s;
+}
+
+h1 {
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-bg {
+    background-color: gainsboro;
+    width: 95%;
+    margin: 0 auto 5% auto;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+form {
+    margin: 5% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, label {
+    display: inline-block;
+    width: auto;
+}
+
+input {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  rgb(108, 21, 119);
+    background-color: rgba(185, 183, 183, 0.952);
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    border-left: 5px solid var(--green);
+    margin: 5px 0;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+
+input:hover {
+    background-color: rgba(211, 204, 204, 0.829);
+}
+
+input:focus {
+    background-color: white;
+}
+
+label {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(35, 118, 212, 0.877);
+}
+
+.submit {
+    padding: 5px 0;
+    background-color: rgb(108, 21, 119);
+    border: 3px solid var(--green);
+    color: var(--green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: rgba(241, 11, 126, 0.568);
+}
+/* main styling end */
+
+
+/* footer styling start */
+footer {
+    background-color: black;
+    padding: 1px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: blueviolet;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+footer a:active {
+    color: red;
+}
+
+/* footer styling end */
+
+
+/* small media styling start */
+@media screen and (max-width: 700px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown .drop-menu {
+        display: none;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .dropdown:focus-within .drop-menu {
+        display: block;
+    }
+
+    .drop-btn {
+        text-decoration: none;
+        display: block;
+        background-color: var(--green);
+        width: 100%;
+        color: rgb(5, 50, 253);
+        padding: 15px;
+        margin: 0;
+        font-family: Geneva, sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .drop-btn:hover {
+        background-color: rgba(7, 148, 7, 0.74);
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    main {
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    .main-bg {
+    height: 90vh;
+    }
+}
+/* small media styling end */

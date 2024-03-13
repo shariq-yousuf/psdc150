@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" type="text/css" href="../css/3-style.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Sign In</h1>
-    </header>
-    <main>
-        <form action="4-dashboard.html">
-            <fieldset>
-                <label for="user-name">User Name: </label><br>
-                <input type="text" id="user-name" name="user-name" placeholder="user-name/email" required><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" required placeholder="********"><br>
-                <input type="submit" value="Sign In"><br><br>
-                <a href="6-forgot-password.html">forgot password?</a>
-                <a href="2-create-account.html">Don't have an account?</a><br>
-            </fieldset>
-        </form>
-    </main><hr>
+    <!--nav bar will be same on all pages-->
+    <nav>
+        <!-- this is a horizental nav bar for big media / laptop-->
+        <div class="nav-bar">
+            <ul>
+                <span>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="3-log-in.html">Sign In</a></li>
+                    <li class="no-border"><a href="2-create-account.html">Create Account</a></li>
+                </span>
+                <span class="about">
+                    <a href="#">About</a>
+                </span>
+            </ul>
+        </div>
+
+        <!-- this is a dropdown nav bar for small media / mobile-->
+        <div class="dropdown">
+            <button class="drop-btn">Menu</button>
+            <div class="drop-menu">
+                <ul>
+                    <span>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="3-log-in.html">Sign In</a></li>
+                        <li class="no-border"><a href="2-create-account.html">Create Account</a></li>
+                    </span>
+                    <span class="about">
+                        <a href="#">About</a>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-bg">
+        <main>
+            <h1>Sign In</h1>
+            <div class="form-bg">
+                <form action="4-dashboard.html" novalidate>
+                    <label for="user-name">User Name: </label>
+                    <input type="text" id="user-name" name="user-name" placeholder="user-name/email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="********">
+                    <button class="submit" type="submit">Sign In</button>
+                    <a href="6-forgot-password.html">forgot password?</a>
+                    <a href="2-create-account.html">Don't have an account?</a>
+                </form>
+            </div>
+        </main>
+    </div>
     <footer>
         <p>Copyrights | <a href="#">terms&condition</a></p>
     </footer>
 
 </body>
+
 </html>
