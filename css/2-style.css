@@ -5,8 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(125deg, rgb(108, 21, 119) 50%, rgba(241, 11, 126, 0.568));
-
+    position: relative;
 }
 
 /* nav bar styling start */
@@ -74,6 +73,11 @@ li a:active,
 
 
 /* main styling start */
+.main-bg {
+    background-image: linear-gradient(125deg, rgb(108, 21, 119) 50%, rgba(241, 11, 126, 0.568));
+    padding: 1px;
+}
+
 main {
     background-color: rgba(35, 118, 212, 0.877);
     width: 50%;
@@ -159,10 +163,11 @@ label {
 footer {
     background-color: black;
     padding: 1px;
+}
+
+p {
     color: white;
     text-align: center;
-    position: sticky;
-    bottom: 0;
 }
 
 footer a {
@@ -242,6 +247,11 @@ footer a:active {
 
     main {
         width: 95%;
+        margin-top: 30px;
+    }
+
+    .main-bg {
+    height: 90vh;
     }
 }
 
