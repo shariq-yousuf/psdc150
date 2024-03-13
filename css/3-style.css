@@ -127,7 +127,6 @@ input {
     border-left: 5px solid var(--green);
     margin: 5px 0;
     padding: 5px 10px;
-    text-transform: capitalize;
 }
 
 input:hover {
