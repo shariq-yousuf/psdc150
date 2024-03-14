@@ -12,6 +12,9 @@ body {
 
 :root {
     --green: rgba(1, 255, 1, 1);
+    --purple: rgb(108, 21, 119);
+    --pink: rgba(241, 11, 126, 0.568);
+    --blue: rgba(35, 118, 212, 0.877);
 }
 
 
@@ -61,7 +64,7 @@ color: blueviolet;
 
 li a:hover,
 .about a:hover {
-    background-color: rgb(108, 21, 119);
+    background-color: var(--purple);
     color: white;
 }
 
@@ -79,7 +82,7 @@ footer {
 }
 
 main {
-    background-image: linear-gradient(125deg, rgb(108, 21, 119) 50%, rgba(241, 11, 126, 0.568));
+    background-image: linear-gradient(125deg, var(--purple) 50%, var(--pink));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -94,7 +97,7 @@ main {
     width: 60%;
     margin: auto;
     padding: 2em 0;
-    background-color: rgba(35, 118, 212, 0.877);
+    background-color: var(--blue);
     border-radius: 10px;
     transition: width 2s;
 }
@@ -113,8 +116,8 @@ main {
     margin: 0 auto;
     border-radius: 15px;
     text-decoration: none;
-    color:  rgb(108, 21, 119);
-    box-shadow: 0px 0px 15px  rgb(108, 21, 119);
+    color:  var(--purple);
+    box-shadow: 0px 0px 15px var(--purple);
 }
 
 .main-content h2 a:hover {

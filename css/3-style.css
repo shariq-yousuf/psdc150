@@ -12,6 +12,9 @@ body {
 
 :root {
     --green: rgba(1, 255, 1, 1);
+    --purple: rgb(108, 21, 119);
+    --pink: rgba(241, 11, 126, 0.568);
+    --blue: rgba(35, 118, 212, 0.877);
 }
 
 .dropdown {
@@ -60,7 +63,7 @@ li a:visited,
 
 li a:hover,
 .about a:hover {
-    background-color: rgb(108, 21, 119);
+    background-color: var(--purple);
     color: white;
 }
 
@@ -74,13 +77,13 @@ li a:active,
 
 /* main styling start */
 .main-bg {
-    background-image: linear-gradient(125deg, rgb(108, 21, 119) 50%, rgba(241, 11, 126, 0.568));
+    background-image: linear-gradient(125deg, var(--purple) 50%, var(--pink));
     padding: 1px;
     height: 85vh;
 }
 
 main {
-    background-color: rgba(35, 118, 212, 0.877);
+    background-color: var(--blue);
     width: 50%;
     margin: 10px auto;
     padding: 1px;
@@ -104,7 +107,7 @@ h1 {
 }
 
 form {
-    margin: 5% auto;
+    margin: 5% auto 0 auto;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -118,7 +121,7 @@ input, label {
 input {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:  rgb(108, 21, 119);
+    color:  var(--purple);
     background-color: rgba(185, 183, 183, 0.952);
     border-radius: 3px;
     border-top-left-radius: 0;
@@ -140,12 +143,12 @@ input:focus {
 label {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(35, 118, 212, 0.877);
+    color: var(--blue);
 }
 
 .submit {
     padding: 5px 0;
-    background-color: rgb(108, 21, 119);
+    background-color: var(--purple);
     border: 3px solid var(--green);
     color: var(--green);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -154,7 +157,21 @@ label {
 }
 
 .submit:hover {
-    background-color: rgba(241, 11, 126, 0.568);
+    background-color: var(--pink);
+}
+
+.link {
+    width: 90%;
+    margin: 10px auto 5% auto;
+}
+
+.link a {
+    color: var(--purple);
+    padding: 0 10px 15px 0px;
+}
+
+.link a:hover {
+    color: var(--pink);
 }
 /* main styling end */
 
