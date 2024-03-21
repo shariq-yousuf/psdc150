@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: #B5C2CA;
+}
+
+.side-bar {
+    border: 1px solid;
+    background-color: #F0F3F4;
+    margin: 10px;
+    padding: 15px;
+    border: 3px solid #D4DBDF;
+    border-radius: 10px;
+}
+
+.logo-name {
+    margin-left: 8px;
+}
+.divider {
+    border-top: 1px solid #D4DBDF;
+}
+
+/* yaha tk kam kiya hy  */
+
+nav li {
+    list-style: none;
+    margin-left: -31px;
+}
+
+i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+}
+
+td img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}

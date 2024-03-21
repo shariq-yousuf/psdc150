@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Grid Project</title>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="side-bar">
+        <div class="logo">
+            <h3 class="logo-name"><i class="material-symbols-outlined">crowdsource</i>Logo</h3>
+        </div>
+
+        <hr class="divider">
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#"><i class="material-symbols-outlined">Dashboard</i>Dashboard</a></li>
+                <li><a href="#"><i class="material-symbols-outlined">stacks</i>Projects</a></li>
+                <li><a href="#"><i class="material-symbols-outlined">ballot</i>Task list</a></li>
+                <li><a href="#"><i class="material-symbols-outlined">filter_none</i>Services</a></li>
+                <li><a href="#"><i class="material-symbols-outlined">notifications </i>Notifications</a></li>
+                <li><a href="#"><i class="material-symbols-outlined">forum</i>Chat</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img src="./assets/user.jpg" alt="" />
+            <p>shariqyousuf01@gmail.com</p>
+        </div>
+    </aside>
+
+    <main>
+        <header>
+            <input type="search" placeholder="Search" name="search" id="search" />
+            <select>
+                <option value="monday">Monday, 6th March</option>
+                <option value="tuesday">Tuesday, 7th March</option>
+                <option value="wednesday">Wednesday, 8th March</option>
+            </select>
+            <div class="header-btn">
+                <span class="header-active"><i class="material-symbols-outlined">style</i>Card</span>
+                <span><i class="material-symbols-outlined">list</i>List</span>
+            </div>
+        </header>
+
+        <section class="tasks">
+            <header>
+                <h2>Last tasks</h2>
+                <p><span class="bold">117 total,</span> proceed to resolve them</p>
+
+                <h2>94</h2>
+                <p>Done</p>
+
+                <h2>23</h2>
+                <p>In progress</p>
+            </header>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Name</td>
+                        <td>Admin</td>
+                        <td>Members</td>
+                        <td>Status</td>
+                        <td>Run time</td>
+                        <td>Finish date</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ClientOnboarding - Circle</td>
+                        <td><img src="./assets/user.jpg" alt="Samanta j.">Samanta J.</td>
+                        <td>3</td>
+                        <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
+                        <td>6 hours</td>
+                        <td class="finish-date">6 mon</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+</body>
+
+</html>
