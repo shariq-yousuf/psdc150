@@ -12,7 +12,7 @@
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
-                'wght' 400,
+                'wght' 00,
                 'GRAD' 0,
                 'opsz' 24
         }
@@ -22,7 +22,8 @@
 <body>
     <aside class="side-bar">
         <div class="logo">
-            <h3 class="logo-name"><i class="material-symbols-outlined">crowdsource</i>Logo</h3>
+            <img src="./assets/lighter-svgrepo-com.svg" alt="">
+            <h4 class="logo-name">BRESS</h4>
         </div>
 
         <hr class="divider">
@@ -31,15 +32,16 @@
             <ul>
                 <li><a href="#"><i class="material-symbols-outlined">Dashboard</i>Dashboard</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">stacks</i>Projects</a></li>
-                <li><a href="#"><i class="material-symbols-outlined">ballot</i>Task list</a></li>
+                <li><a  class="nav-active" href="#"><i class="material-symbols-outlined">ballot</i>Task list</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">filter_none</i>Services</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">notifications </i>Notifications</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">forum</i>Chat</a></li>
             </ul>
         </nav>
         <div class="user">
-            <img src="./assets/user.jpg" alt="" />
-            <p>shariqyousuf01@gmail.com</p>
+           <img src="./assets/user.jpg" alt="" />
+           <h4 class="user-name">Shariq Yousuf</h4>
+            <p class="user-contact">shariqyousuf01@gmail.com</p>
         </div>
     </aside>
 
@@ -57,44 +59,92 @@
             </div>
         </header>
 
-        <section class="tasks">
-            <header>
-                <h2>Last tasks</h2>
-                <p><span class="bold">117 total,</span> proceed to resolve them</p>
+        <div class="sect-div">
+            <section class="tasks">
+                <header>
+                    <h2>Last tasks</h2>
+                    <p><span class="bold">117 total,</span> proceed to resolve them</p>
 
-                <h2>94</h2>
-                <p>Done</p>
+                    <h2>94</h2>
+                    <p>Done</p>
 
-                <h2>23</h2>
-                <p>In progress</p>
-            </header>
+                    <h2>23</h2>
+                    <p>In progress</p>
+                </header>
 
-            <table>
-                <thead>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Name</td>
-                        <td>Admin</td>
-                        <td>Members</td>
-                        <td>Status</td>
-                        <td>Run time</td>
-                        <td>Finish date</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>ClientOnboarding - Circle</td>
-                        <td><img src="./assets/user.jpg" alt="Samanta j.">Samanta J.</td>
-                        <td>3</td>
-                        <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
-                        <td>6 hours</td>
-                        <td class="finish-date">6 mon</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Name</td>
+                            <td>Admin</td>
+                            <td>Members</td>
+                            <td>Status</td>
+                            <td>Run time</td>
+                            <td>Finish date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>ClientOnboarding - Circle</td>
+                            <td><img src="./assets/user.jpg" alt="Samanta j.">Samanta J.</td>
+                            <td>3</td>
+                            <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
+                            <td>6 hours</td>
+                            <td class="finish-date">6 mon</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Meeting with Webflow & Notion</td>
+                            <td><img src="./assets/user.jpg" alt="Samanta j.">Bob P.</td>
+                            <td>4</td>
+                            <td class="status"><i class="material-symbols-outlined">check_circle</i>Done</td>
+                            <td>2 hours</td>
+                            <td class="finish-date">7 Tue</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>First Handoff with Engineers</td>
+                            <td><img src="./assets/user.jpg" alt="Samanta j.">Kate O.</td>
+                            <td>10</td>
+                            <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
+                            <td>3 days</td>
+                            <td class="finish-date">10 Fri</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Client Drafting (2) with Lawrence</td>
+                            <td><img src="./assets/user.jpg" alt="Samanta j.">Jack F.</td>
+                            <td>7</td>
+                            <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
+                            <td>1 week</td>
+                            <td class="finish-date">19 Sun</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        </section>
+            </section>
+            
+            <div class="sect-div-child">
+                <section class="productivity">
+                    <h3>Productivity</h3>
+                    <p><span class="blue-dot"></span>Research <span class="purple-dot"></span>Design</p>
+
+                    <select name="" id="">
+                        <option value="">01-07 May</option>
+                        <option value="">08-14 May</option>
+                        <option value="">15-21 May</option>
+                    </select>
+                    <p>Data updates every 3 hours</p>
+
+                    <div>graph</div>
+
+                </section>
+
+                <section class="projects"></section>
+            </div>
+        </div>
     </main>
 </body>
 

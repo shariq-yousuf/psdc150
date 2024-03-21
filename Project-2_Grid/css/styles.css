@@ -2,48 +2,103 @@
     box-sizing: border-box;
 }
 
+:root {
+--border-clr: #D4DBDF;
+--dark-gray: #525966;
+}
+
 body {
     margin: 0;
     display: flex;
-    background-color: #B5C2CA;
+    background-color: #bbd2e2;
+    font-family: sans-serif;
 }
 
 .side-bar {
-    border: 1px solid;
     background-color: #F0F3F4;
     margin: 10px;
     padding: 15px;
-    border: 3px solid #D4DBDF;
-    border-radius: 10px;
+    border: 3px solid var(--border-clr);
+    border-radius: 13px;
+    position: relative;
+    flex-basis: 230px;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.logo img {
+    width: 25px;
 }
 
 .logo-name {
-    margin-left: 8px;
-}
-.divider {
-    border-top: 1px solid #D4DBDF;
+    margin-left: 10px;
 }
 
-/* yaha tk kam kiya hy  */
+.divider {
+    border-top: 1px solid var(--border-clr);
+}
 
 nav li {
     list-style: none;
-    margin-left: -31px;
+    margin-left: -32px;
 }
 
 i {
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 nav a {
     text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    margin: 1px 0;
+    width: 100%;
+    border-radius: 35px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-active {
+    background-color: black;
+    color: white;
+}
+
+.user {
+    position: absolute;
+    bottom: 20px;
+    width: 87%;
+    text-align: center;
 }
 
 .user img {
     width: 40px;
     height: 40px;
     border-radius: 50%;;
+    border: 1px solid orange;
+}
+
+.user-name {
+    margin: 10px;
+}
+.user-contact {
+    font-size: 11px;
+    color: var(--dark-gray);
+    margin: 5px;
+}
+
+main {
+    width: 100%;
 }
 
 td img {
@@ -51,4 +106,34 @@ td img {
     height: 30px;
     border-radius: 50%;
     vertical-align: middle;
+}
+
+
+/* sect-div styling */
+.sect-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tasks {
+    border: 1px solid;
+}
+
+.sect-div-child {
+    display: flex;
+}
+
+.productivity {
+    border: 1px solid;
+    width: 50%;
+}
+
+.projects {
+    flex-grow: 1;
+    border: 1px solid;
+    width: 50%;
+    height: 30vh;
+    padding: 1px;
+    background-color: black;
 }
