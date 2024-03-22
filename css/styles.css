@@ -2,20 +2,34 @@
     box-sizing: border-box;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 00,
+        'GRAD' 0,
+        'opsz' 24
+}
+
 :root {
 --border-clr: #D4DBDF;
 --dark-gray: #525966;
+--bg-clr: #bbd2e2;
+--sb-bg-clr: #F0F3F4;
+--text-clr: #9a9da0;
 }
 
 body {
     margin: 0;
     display: flex;
-    background-color: #bbd2e2;
+    background-color: var(--bg-clr);
     font-family: sans-serif;
+    font-size: 14px;
 }
 
+
+/* sidebar styling start  */
 .side-bar {
-    background-color: #F0F3F4;
+    background-color: var(--sb-bg-clr);
     margin: 10px;
     padding: 15px;
     border: 3px solid var(--border-clr);
@@ -28,7 +42,7 @@ body {
 .logo {
     display: flex;
     align-items: baseline;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .logo img {
@@ -48,7 +62,7 @@ nav li {
     margin-left: -32px;
 }
 
-i {
+nav i {
     vertical-align: middle;
     margin-right: 8px;
 }
@@ -60,7 +74,6 @@ nav a {
     margin: 1px 0;
     width: 100%;
     border-radius: 35px;
-    font-size: 14px;
     color: var(--dark-gray);
 }
 
@@ -93,14 +106,95 @@ nav a:hover {
 }
 .user-contact {
     font-size: 11px;
-    color: var(--dark-gray);
+    color: var(--text-clr);
     margin: 5px;
 }
+/* sidebar styling end */
+
 
 main {
-    width: 100%;
+    width: ;
 }
 
+
+/* header styling start */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 0 20px;
+    border-radius: 13px;
+    height: 85px;
+    border: 3px solid var(--bg-clr);
+}
+
+#search {
+    text-decoration: none;
+    border: none;
+    /* width: 50%; */
+    background-color: var(--sb-bg-clr);
+    padding: 13px 20px;
+    border-radius: 35px 0 0 35px;
+    outline: none;
+}
+
+#search:hover {
+    background-color: #dde1e2;
+}
+
+.header-search-btn {
+    border: none;
+    background-color: var(--sb-bg-clr);
+    color: var(--text-clr);
+    cursor: pointer;
+    border-radius: 0px 35px 35px 0px;
+    padding: 9.5px 10px 7.5px 10px;
+    margin-left: -7px;
+}
+
+.header-search-btn:hover {
+    color: black;
+}
+
+.header-search-btn i {
+    vertical-align: middle;
+}
+
+.header-search-btn .material-symbols-outlined:hover {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.header-drpdown {
+    border: none;
+    color: var(--text-clr);
+    cursor: pointer;
+}
+
+.header-btns {
+    background-color: var(--sb-bg-clr);
+    border-radius: 35px;
+    padding: 8px 15px 8px 0px;
+}
+
+.header-btns i {
+    vertical-align: middle;
+    margin: 0 1px 3px 0;
+}
+
+.header-active {
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    padding: 12px 16px 15px 16px;
+}
+
+/* yaha tk */
 td img {
     width: 30px;
     height: 30px;
@@ -113,7 +207,7 @@ td img {
 .sect-div {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80vw;
 }
 
 .tasks {

@@ -8,15 +8,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Project No. 2 (Flex)</title>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 00,
-                'GRAD' 0,
-                'opsz' 24
-        }
-    </style>
 </head>
 
 <body>
@@ -32,30 +23,34 @@
             <ul>
                 <li><a href="#"><i class="material-symbols-outlined">Dashboard</i>Dashboard</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">stacks</i>Projects</a></li>
-                <li><a  class="nav-active" href="#"><i class="material-symbols-outlined">ballot</i>Task list</a></li>
+                <li><a class="nav-active" href="#"><i class="material-symbols-outlined">ballot</i>Task list</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">filter_none</i>Services</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">notifications </i>Notifications</a></li>
                 <li><a href="#"><i class="material-symbols-outlined">forum</i>Chat</a></li>
             </ul>
         </nav>
         <div class="user">
-           <img src="./assets/user.jpg" alt="" />
-           <h4 class="user-name">Shariq Yousuf</h4>
+            <img src="./assets/user.jpg" alt="" />
+            <h4 class="user-name">Shariq Yousuf</h4>
             <p class="user-contact">shariqyousuf01@gmail.com</p>
         </div>
     </aside>
 
     <main>
-        <header>
-            <input type="search" placeholder="Search" name="search" id="search" />
-            <select>
-                <option value="monday">Monday, 6th March</option>
-                <option value="tuesday">Tuesday, 7th March</option>
-                <option value="wednesday">Wednesday, 8th March</option>
-            </select>
-            <div class="header-btn">
+        <header class="main-header">
+            <form class="header-search-bar" action="#">
+                <input type="search" placeholder="Search" name="search" id="search" />
+                <button class="header-search-btn" type="submit"><i class="material-symbols-outlined">search</i></button>
+                <select class="header-drpdown">
+                    <option value="monday">Monday, 6th March</option>
+                    <option value="tuesday">Tuesday, 7th March</option>
+                    <option value="wednesday">Wednesday, 8th March</option>
+                </select>
+            </form>
+
+            <div class="header-btns">
                 <span class="header-active"><i class="material-symbols-outlined">style</i>Card</span>
-                <span><i class="material-symbols-outlined">list</i>List</span>
+                <span class="header-btn-2"><i class="material-symbols-outlined">list</i>List</span>
             </div>
         </header>
 
@@ -125,7 +120,7 @@
                 </table>
 
             </section>
-            
+
             <div class="sect-div-child">
                 <section class="productivity">
                     <h3>Productivity</h3>
