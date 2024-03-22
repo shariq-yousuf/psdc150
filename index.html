@@ -56,65 +56,75 @@
 
         <div class="sect-div">
             <section class="tasks">
-                <header>
-                    <h2>Last tasks</h2>
-                    <p><span class="bold">117 total,</span> proceed to resolve them</p>
+                <header class="tasks-header">
+                    <div class="tasks-header-child-1">
+                        <h2>Last tasks</h2>
+                        <p><span class="bold">117 total,</span> proceed to resolve them</p>
+                    </div>
 
-                    <h2>94</h2>
-                    <p>Done</p>
+                    <div class="tasks-header-child-2">
+                        <div class="tasks-header-child-2_1">
+                            <h2>94</h2>
+                            <p>Done</p>
+                        </div>
+                        <span class="tasks-divider"></span>
+                        <div class="tasks-header-child-2_2">
+                            <h2>23</h2>
+                            <p>In progress</p>
+                        </div>
 
-                    <h2>23</h2>
-                    <p>In progress</p>
+                    </div>
+
                 </header>
 
                 <table>
                     <thead>
                         <tr>
-                            <td><input type="checkbox"></td>
-                            <td>Name</td>
-                            <td>Admin</td>
-                            <td>Members</td>
-                            <td>Status</td>
-                            <td>Run time</td>
-                            <td>Finish date</td>
+                            <th><input type="checkbox" id="name" /></th>
+                            <th class="name"><label for="name">Name</label></th>
+                            <th class="admin">Admin</th>
+                            <th class="members">Members</th>
+                            <th class="status">Status</th>
+                            <th class="time">Run time</th>
+                            <th class="finish right">Finish date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="checkbox"></td>
-                            <td>ClientOnboarding - Circle</td>
-                            <td><img src="./assets/user.jpg" alt="Samanta j.">Samanta J.</td>
+                            <td><input type="checkbox" id="client" /></td>
+                            <td><label for="client">ClientOnboarding - Circle</label></td>
+                            <td><img src="./assets/pngegg.png" alt="Samanta j.">Samanta J.</td>
                             <td>3</td>
                             <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
                             <td>6 hours</td>
-                            <td class="finish-date">6 mon</td>
+                            <td class="finish-date right">6 mon</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td>
-                            <td>Meeting with Webflow & Notion</td>
-                            <td><img src="./assets/user.jpg" alt="Samanta j.">Bob P.</td>
+                            <td><input type="checkbox" id="meeting" /></td>
+                            <td><label for="meeting">Meeting with Webflow & Notion</label></td>
+                            <td><img src="./assets/pngegg (1).png" alt="Samanta j.">Bob P.</td>
                             <td>4</td>
                             <td class="status"><i class="material-symbols-outlined">check_circle</i>Done</td>
                             <td>2 hours</td>
-                            <td class="finish-date">7 Tue</td>
+                            <td class="finish-date right">7 Tue</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td>
-                            <td>First Handoff with Engineers</td>
-                            <td><img src="./assets/user.jpg" alt="Samanta j.">Kate O.</td>
+                            <td><input type="checkbox" id="first" /></td>
+                            <td><label for="first">First Handoff with Engineers</label></td>
+                            <td><img src="./assets/pngegg (2).png" alt="Samanta j.">Kate O.</td>
                             <td>10</td>
                             <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
                             <td>3 days</td>
-                            <td class="finish-date">10 Fri</td>
+                            <td class="finish-date right">10 Fri</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"></td>
-                            <td>Client Drafting (2) with Lawrence</td>
-                            <td><img src="./assets/user.jpg" alt="Samanta j.">Jack F.</td>
+                            <td><input type="checkbox" id="drafting"></td>
+                            <td><label for="drafting">Client Drafting (2) with Lawrence</label></td>
+                            <td><img src="./assets/pngegg (3).png" alt="Samanta j.">Jack F.</td>
                             <td>7</td>
                             <td class="status"><i class="material-symbols-outlined">schedule</i>In progress</td>
                             <td>1 week</td>
-                            <td class="finish-date">19 Sun</td>
+                            <td class="finish-date right">19 Sun</td>
                         </tr>
                     </tbody>
                 </table>
