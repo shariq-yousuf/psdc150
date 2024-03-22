@@ -25,7 +25,6 @@ body {
     font-family: sans-serif;
     font-size: 14px;
     white-space: nowrap;
-
 }
 
 
@@ -269,8 +268,8 @@ table i {
 
 table img {
     margin-right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     vertical-align: middle;
 }
