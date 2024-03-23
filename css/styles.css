@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 00,
-        'GRAD' 0,
-        'opsz' 24
-}
-
 :root {
     --border-clr: #D4DBDF;
     --dark-gray: #525966;
@@ -27,6 +19,14 @@
     font-family: myfont;
     src: url(../assets/fonts/Pragmatica-Bold.ttf);
     font-weight: bold;
+}
+
+.side-bar .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 100,
+  'opsz' 20
 }
 
 body {
@@ -192,14 +192,6 @@ main {
     vertical-align: middle;
 }
 
-.header-search-btn .material-symbols-outlined:hover {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 24
-}
-
 .header-drpdown {
     outline: none;
     border: none;
@@ -295,6 +287,7 @@ p {
 table {
     text-align: left;
     width: 100%;
+    border-collapse: collapse;
 }
 
 table img {
@@ -310,7 +303,7 @@ th {
     border-bottom: 1px solid var(--border-clr);
     font-weight: normal;
     color: var(--text-clr);
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 td {
@@ -462,12 +455,37 @@ label {
     position: relative;
 }
 
+.arrow-btn {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 5;
+}
+
+.arrow-btn i:hover {
+    color: #BBC3C9;
+}
+
+.arrow-btn i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.arrow-btn .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48
+  }
+
 .projects h5{
     font-size: 16px;
     font-weight: normal;
     margin: 0;
 }
-
 
 /* sectoin-3_project-1 styling start */
 .project-1 {
@@ -528,8 +546,8 @@ label {
 }
 
 .project-1 img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     margin-right: -7px;
     border: 0.8px solid white;
