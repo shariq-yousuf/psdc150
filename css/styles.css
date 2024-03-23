@@ -286,11 +286,6 @@ table {
     width: 100%;
 }
 
-table i {
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
 table img {
     margin-right: 10px;
     width: 20px;
@@ -327,12 +322,39 @@ td {
     width: 20%;
 }
 
+.inprogress {
+    background-color: #F0FCFF;
+    color: #136D89;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.done {
+    background-color: #EDF9E7;
+    color: #779B66;
+    padding:3px 6px;
+    border-radius: 3px;
+    margin-top: -10px;
+}
+
+.done i, .inprogress i {
+    vertical-align: middle;
+    margin: 0px 3px 2px 0;
+    font-size: 20px;
+}
+
 .time {
     width: 10%;
 }
 
 .finish {
     width: 10%;
+}
+
+.finish-date {
+    background-color: var(--sb-bg-clr);
+    padding: 3px 6px;
+    border-radius: 35px;
 }
 
 .right {
@@ -355,7 +377,7 @@ label {
 /* sectoin-2 styling start */
 .productivity {
     border: 3px solid var(--bg-clr);
-    width: 50%;
+    flex-basis: 50%;
     font-size: 12px;
     padding: 30px;
     margin: 10px;
@@ -420,7 +442,7 @@ label {
 /* sectoin-3 styling start */
 .projects {
     border: 3px solid var(--bg-clr);
-    width: 50%;
+    flex-basis: 50%;
     padding: 30px;
     margin: 10px 10px 10px 0;
     border-radius: 13px;
