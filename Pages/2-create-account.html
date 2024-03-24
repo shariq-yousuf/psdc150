@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon (1).ico (1).ico">
+    <link rel="stylesheet" type="text/css" href="../css/2-style.css" />
+</head>
+
+<body>
+    <!--nav bar will be same on all pages-->
+    <nav>
+        <!-- this is a horizental nav bar for big media / laptop-->
+        <div class="nav-bar">
+            <ul>
+                <span>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="3-log-in.html">Sign In</a></li>
+                    <li class="no-border"><a href="2-create-account.html">Create Account</a></li>
+                </span>
+                <span class="about">
+                    <a href="#">About</a>
+                </span>
+            </ul>
+        </div>
+
+        <!-- this is a dropdown nav bar for small media / mobile-->
+        <div class="dropdown">
+            <button class="drop-btn">Menu</button>
+            <div class="drop-menu">
+                <ul>
+                    <span>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="3-log-in.html">Sign In</a></li>
+                        <li class="no-border"><a href="2-create-account.html">Create Account</a></li>
+                    </span>
+                    <span class="about">
+                        <a href="#">About</a>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="main-bg">
+    <main>
+        <h1>Let's Start...</h1>
+        <div class="form-bg">
+            <form action="4-dashboard.html" autocomplete="on" novalidate>
+                    <label for="first-name">First Name: </label>
+                    <input type="text" id="first-name" name="first-name" placeholder="i.e Shariq" required>
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" id="last-name" name="last-name" placeholder="i.e Yousuf" required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    <label for="user-name">User Name: </label>
+                    <input type="text" id="user-name" name="user-name" placeholder="@user-name" required>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8}"
+                        placeholder="Min 8 Characters required!" required>
+                <button class="submit" type="submit">Sign Up</button>
+            </form>
+            <p class="linkToSignIn">
+                <a href="3-log-in.html">Already have an account?</a>
+            </p>
+        </div>
+    </main>
+</div>
+    <footer>
+        <p>Copyrights | <a href="#">terms&condition</a></p>
+    </footer>
+</body>
+
+</html>
