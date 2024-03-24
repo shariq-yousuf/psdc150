@@ -620,6 +620,7 @@ label {
         margin: 10px 0;
         border-radius: 13px;
         padding: 0;
+        cursor: pointer;
     }
 
     .drop-btn:focus + .side-bar {
