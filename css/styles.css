@@ -302,15 +302,30 @@ table img {
 }
 
 th {
-    border-top: 1px solid var(--border-clr);
-    border-bottom: 1px solid var(--border-clr);
     font-weight: normal;
     color: var(--text-clr);
     padding: 10px 0;
 }
 
+.t-h {
+    border-top: 1px solid var(--border-clr);
+    border-bottom: 1px solid var(--border-clr);
+}
+
 td {
     padding: 10px 10px 10px 0;
+}
+
+td:first-child {
+    border-radius: 13px 0 0 13px;
+}
+
+td:last-child {
+    border-radius: 0 13px 13px 0;
+}
+
+tr:hover {
+    background-color: var(--sb-bg-clr);
 }
 
 .name {
@@ -608,24 +623,34 @@ label {
 
 /* mob responsive */
 @media  screen and (max-width:480px) {
-    .side-bar {
+    .drop-menu {
         display: none;
     }
 
     .drop-btn {
         display: block;
-        border: 3px solid var(--border-clr);
+        /* border: 3px solid var(--border-clr); */
+        border: none;
         text-decoration: none;
-        background-color: white;
-        margin: 10px 0;
-        border-radius: 13px;
+        /* background-color: white; */
+        margin-top: 10px;
+        /* border-radius: 13px; */
         padding: 0;
         cursor: pointer;
     }
 
-    .drop-btn:focus + .side-bar {
+    .dropdown:focus-within .drop-menu {
         display: block;
         margin-left: 0;
+        margin: 15px;
+    }
+
+    .dropdown:focus-within .drop-btn {
+        margin-left: 15px;
+    }
+
+    .side-bar {
+        padding: 0;
     }
 }
 /* THE END */
